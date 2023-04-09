@@ -22,7 +22,7 @@ with open('./my_model.pickle', 'rb') as f:
 
 
 
-OverallCond = st.text_input("Enter Overall condition rating (1-5)")
+OverallCond = st.text_input("Enter Overall condition rating (between 1-5)")
 # print the user's name
 #st.write("OverallCond :", OverallCond)
 
