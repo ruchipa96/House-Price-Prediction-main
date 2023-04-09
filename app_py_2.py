@@ -22,33 +22,33 @@ with open('./my_model.pickle', 'rb') as f:
 
 
 
-OverallCond = st.text_input("Enter OverallCond")
+OverallCond = st.text_input("Enter Overall condition rating")
 # print the user's name
-st.write("OverallCond :", OverallCond)
+#st.write("OverallCond :", OverallCond)
 
-TotalBsmtSF = st.text_input("Enter TotalBsmtSF")
+TotalBsmtSF = st.text_input("Enter Total Basement Surface Area")
 # print the user's name
-st.write("TotalBsmtSF :", TotalBsmtSF)
+#st.write("TotalBsmtSF :", TotalBsmtSF)
 
-FirstFlrSF = st.text_input("Enter  FirstFlrSF")
+FirstFlrSF = st.text_input("Enter  First Floor Surface Area")
 # print the user's name
-st.write("FirstFlrSF :", FirstFlrSF)
+#st.write("FirstFlrSF :", FirstFlrSF)
 
-SecondFlrSF = st.text_input("Enter SecondFlrSF")
+SecondFlrSF = st.text_input("Enter Second Floor Surface Area")
 # print the user's name
-st.write("SecondFlrSF :", SecondFlrSF)
+#st.write("SecondFlrSF :", SecondFlrSF)
 
-GrLivArea = st.text_input("Enter GrLivArea")
+GrLivArea = st.text_input("Enter Living Room Surface Area")
 # print the user's name
-st.write("GrLivArea :", GrLivArea)
+#st.write("GrLivArea :", GrLivArea)
 
-FullBath = st.text_input("Enter FullBath")
+FullBath = st.text_input("Enter number of Full Baths")
 # print the user's name
-st.write("FullBath :", FullBath)
+#st.write("FullBath :", FullBath)
 
-BedroomAbvGr = st.text_input("Enter BedroomAbvGr")
+BedroomAbvGr = st.text_input("Enter number of Bedrooms")
 # print the user's name
-st.write("BedroomAbvGr :", BedroomAbvGr)
+#st.write("BedroomAbvGr :", BedroomAbvGr)
 
 
 user_inputs_app = [OverallCond, TotalBsmtSF, FirstFlrSF, SecondFlrSF, GrLivArea, FullBath, BedroomAbvGr]
