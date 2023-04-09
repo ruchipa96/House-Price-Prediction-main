@@ -16,7 +16,7 @@ def predict_house_price(user_inputs_app, model, df):
         else:
             user_input[feature] = float(user_input[feature])    
     
-    st.write("user_input :", user_input)
+    #st.write("user_input :", user_input)pr
 
     # create label encoder for categorical features
     encoder = LabelEncoder()
