@@ -32,5 +32,5 @@ def predict_house_price(user_inputs_app, model, df):
 
     # print(f"Predicted SalePrice: ${predicted_sale_price:.2f}")
 
-    st.write("Predicted Sales Price :", predicted_sale_price)
+    st.write("Predicted Sales Price : $", predicted_sale_price.style.format({"E": "{:.2f}"}))
 
