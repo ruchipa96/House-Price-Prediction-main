@@ -56,6 +56,9 @@ st.write('div.row-widget.stRadio > div{flex-direction:row;}', unsafe_allow_html=
 # print the user's name
 #st.write("BedroomAbvGr :", BedroomAbvGr)
 
+st.write('<style>div.row-widget.stRadio > div{flex-direction:row;justify-content: center;} </style>', unsafe_allow_html=True)
+
+st.write('<style>div.st-bf{flex-direction:column;} div.st-ag{font-weight:bold;padding-left:2px;}</style>', unsafe_allow_html=True)
 
 #user_inputs_app = [OverallCond, TotalBsmtSF, FirstFlrSF, SecondFlrSF, GrLivArea, FullBath, BedroomAbvGr]
 
