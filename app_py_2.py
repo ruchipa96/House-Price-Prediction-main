@@ -108,7 +108,7 @@ BedroomAbvGr = st.radio("Enter number of Bedrooms",(1, 2 , 3,4,5))
 user_inputs_app = [OverallCond, TotalBsmtSF, FirstFlrSF, SecondFlrSF, GrLivArea, FullBath, BedroomAbvGr]
 
 if st.button('Predict House Price'):
-    cost = predict_house_price(user_inputs_app, model, df)
-    formatted_string = "{:.2f}".format(cost)
+    predict_house_price(user_inputs_app, model, df.style.format("{:.2f})
+    
    # y = "{:.2f}".format(cost[0])
-    st.text('$',formatted_string)
+    #st.text('$',formatted_string.style.format("{:.2f}")
