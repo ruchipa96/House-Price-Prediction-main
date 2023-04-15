@@ -76,7 +76,7 @@ st.write('<style>div.st-bf{flex-direction:column;} div.st-ag{font-weight:bold;pa
 st.title('Home price prediction')
 
 
-OverallCond = st.radio("Enter Overall condition rating",( 1, 2 , 3,4,5,6,7,8,9,10))
+OverallCond = st.radio("Enter Overall condition rating",( 1, 2 , 3,4,5,6,7,8,9))
 # print the user's name
 #st.write("OverallCond :", OverallCond)
 
