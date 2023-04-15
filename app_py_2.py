@@ -27,7 +27,7 @@ backgroundColor="#f0f0f5"
 secondaryBackgroundColor="#e0e0ef"
 textColor="#262730"
 font="sans serif"
-st.write(‘div.row-widget.stRadio > div{flex-direction:row;}’, unsafe_allow_html=True)
+st.write('div.row-widget.stRadio > div{flex-direction:row;}', unsafe_allow_html=True)
 #OverallCond = st.text_input("Enter Overall condition rating (between 1-5)")
 # print the user's name
 #st.write("OverallCond :", OverallCond)
