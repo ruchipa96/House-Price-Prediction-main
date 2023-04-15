@@ -109,5 +109,6 @@ user_inputs_app = [OverallCond, TotalBsmtSF, FirstFlrSF, SecondFlrSF, GrLivArea,
 
 if st.button('Predict House Price'):
     cost = predict_house_price(user_inputs_app, model, df)
+    formatted_string = "{:.2f}".format(cost)
    # y = "{:.2f}".format(cost[0])
-    st.text('$',cost.format({"E": "{:.2f}"}))
+    st.text('$',formatted_string)
