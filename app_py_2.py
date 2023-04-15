@@ -76,23 +76,23 @@ st.write('<style>div.st-bf{flex-direction:column;} div.st-ag{font-weight:bold;pa
 st.title('Home price prediction')
 
 
-OverallCond = st.radio("Enter Overall condition rating (between 1-5)",( 1, 2 , 3,4,5))
+OverallCond = st.radio("Enter Overall condition rating",( 1, 2 , 3,4,5,6,7,8,9,10))
 # print the user's name
 #st.write("OverallCond :", OverallCond)
 
-TotalBsmtSF = st.slider("Enter Total Basement Surface Area", 800, 900, 1000)
+TotalBsmtSF = st.slider("Enter Total Basement Surface Area", 800, 900, 3000)
 # print the user's name
 #st.write("TotalBsmtSF :", TotalBsmtSF)
 
-FirstFlrSF = st.slider("Enter  First Floor Surface Area",800, 900, 1000)
+FirstFlrSF = st.slider("Enter  First Floor Surface Area",800, 900, 3000)
 # print the user's name
 #st.write("FirstFlrSF :", FirstFlrSF)
 
-SecondFlrSF = st.slider("Enter Second Floor Surface Area",800, 900, 1000)
+SecondFlrSF = st.slider("Enter Second Floor Surface Area",800, 900, 3000)
 # print the user's name
 #st.write("SecondFlrSF :", SecondFlrSF)
 
-GrLivArea = st.slider("Enter Living Room Surface Area",1000, 1500,2000)
+GrLivArea = st.slider("Enter Living Room Surface Area",1000, 1500,3000)
 # print the user's name
 #st.write("GrLivArea :", GrLivArea)
 
