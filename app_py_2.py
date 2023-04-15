@@ -65,8 +65,7 @@ st.write('<style>div.st-bf{flex-direction:column;} div.st-ag{font-weight:bold;pa
 #if st.button('Predict House Price'):
 #    predict_house_price(user_inputs_app, model, df)
 st.title('Home price prediction')
- 
-st.write('---')
+
 
 OverallCond = st.radio("Enter Overall condition rating (between 1-5)",( 1, 2 , 3,4,5))
 # print the user's name
