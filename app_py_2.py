@@ -20,7 +20,7 @@ with open('./my_model.pickle', 'rb') as f:
     model = pickle.load(f)
 
 
-[theme]
+
 
 primaryColor="#6eb52f"
 backgroundColor="#f0f0f5"
