@@ -96,7 +96,7 @@ GrLivArea = st.slider("Enter Living Room Surface Area",1000, 1500,3000)
 # print the user's name
 #st.write("GrLivArea :", GrLivArea)
 
-FullBath = st.radio("Enter number of Full Baths",(1, 2 , 3,4,5))
+FullBath = st.radio("Enter number of Full Baths",(1, 2 , 3))
 # print the user's name
 #st.write("FullBath :", FullBath)
 
