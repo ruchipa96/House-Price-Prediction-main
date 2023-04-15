@@ -22,31 +22,68 @@ with open('./my_model.pickle', 'rb') as f:
 
 
 
-OverallCond = st.text_input("Enter Overall condition rating (between 1-5)")
+#OverallCond = st.text_input("Enter Overall condition rating (between 1-5)")
 # print the user's name
 #st.write("OverallCond :", OverallCond)
 
-TotalBsmtSF = st.text_input("Enter Total Basement Surface Area")
+#TotalBsmtSF = st.text_input("Enter Total Basement Surface Area")
 # print the user's name
 #st.write("TotalBsmtSF :", TotalBsmtSF)
 
-FirstFlrSF = st.text_input("Enter  First Floor Surface Area")
+#FirstFlrSF = st.text_input("Enter  First Floor Surface Area")
 # print the user's name
 #st.write("FirstFlrSF :", FirstFlrSF)
 
-SecondFlrSF = st.text_input("Enter Second Floor Surface Area")
+#SecondFlrSF = st.text_input("Enter Second Floor Surface Area")
 # print the user's name
 #st.write("SecondFlrSF :", SecondFlrSF)
 
-GrLivArea = st.text_input("Enter Living Room Surface Area")
+#GrLivArea = st.text_input("Enter Living Room Surface Area")
 # print the user's name
 #st.write("GrLivArea :", GrLivArea)
 
-FullBath = st.text_input("Enter number of Full Baths")
+#FullBath = st.text_input("Enter number of Full Baths")
 # print the user's name
 #st.write("FullBath :", FullBath)
 
-BedroomAbvGr = st.text_input("Enter number of Bedrooms")
+#BedroomAbvGr = st.text_input("Enter number of Bedrooms")
+# print the user's name
+#st.write("BedroomAbvGr :", BedroomAbvGr)
+
+
+#user_inputs_app = [OverallCond, TotalBsmtSF, FirstFlrSF, SecondFlrSF, GrLivArea, FullBath, BedroomAbvGr]
+
+#if st.button('Predict House Price'):
+#    predict_house_price(user_inputs_app, model, df)
+st.title('Home price prediction')
+ 
+st.write('---')
+
+OverallCond = st.radio("Enter Overall condition rating (between 1-5)",(0, 1, 2 , 3,4,5))
+# print the user's name
+#st.write("OverallCond :", OverallCond)
+
+TotalBsmtSF = st.slider("Enter Total Basement Surface Area", 800, 900, 1000)
+# print the user's name
+#st.write("TotalBsmtSF :", TotalBsmtSF)
+
+FirstFlrSF = st.slider("Enter  First Floor Surface Area",800, 900, 1000)
+# print the user's name
+#st.write("FirstFlrSF :", FirstFlrSF)
+
+SecondFlrSF = st.slider("Enter Second Floor Surface Area",800, 900, 1000)
+# print the user's name
+#st.write("SecondFlrSF :", SecondFlrSF)
+
+GrLivArea = st.slider("Enter Living Room Surface Area",1000, 1500, 1700,1800)
+# print the user's name
+#st.write("GrLivArea :", GrLivArea)
+
+FullBath = st.radio("Enter number of Full Baths",(1, 2 , 3,4,5))
+# print the user's name
+#st.write("FullBath :", FullBath)
+
+BedroomAbvGr = st.radio("Enter number of Bedrooms",(1, 2 , 3,4,5))
 # print the user's name
 #st.write("BedroomAbvGr :", BedroomAbvGr)
 
@@ -55,5 +92,4 @@ user_inputs_app = [OverallCond, TotalBsmtSF, FirstFlrSF, SecondFlrSF, GrLivArea,
 
 if st.button('Predict House Price'):
     predict_house_price(user_inputs_app, model, df)
-
 
