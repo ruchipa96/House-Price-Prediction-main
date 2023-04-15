@@ -20,23 +20,13 @@ with open('./my_model.pickle', 'rb') as f:
     model = pickle.load(f)
 
 
-# Primary accent for interactive elements
-primaryColor = '#7792E3'
+[theme]
 
-# Background color for the main content area
-backgroundColor = '#273346'
-
-# Background color for sidebar and most interactive widgets
-secondaryBackgroundColor = '#B9F1C0'
-
-# Color used for almost all text
-textColor = '#FFFFFF'
-
-# Font family for all text in the app, except code blocks
-# Accepted values (serif | sans serif | monospace) 
-# Default: "sans serif"
-font = "sans serif"
-
+primaryColor="#6eb52f"
+backgroundColor="#f0f0f5"
+secondaryBackgroundColor="#e0e0ef"
+textColor="#262730"
+font="sans serif"
 #OverallCond = st.text_input("Enter Overall condition rating (between 1-5)")
 # print the user's name
 #st.write("OverallCond :", OverallCond)
