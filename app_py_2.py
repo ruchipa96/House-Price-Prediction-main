@@ -59,7 +59,7 @@ st.title('Home price prediction')
  
 st.write('---')
 
-OverallCond = st.radio("Enter Overall condition rating (between 1-5)",(0, 1, 2 , 3,4,5))
+OverallCond = st.radio("Enter Overall condition rating (between 1-5)",( 1, 2 , 3,4,5))
 # print the user's name
 #st.write("OverallCond :", OverallCond)
 
@@ -75,7 +75,7 @@ SecondFlrSF = st.slider("Enter Second Floor Surface Area",800, 900, 1000)
 # print the user's name
 #st.write("SecondFlrSF :", SecondFlrSF)
 
-GrLivArea = st.slider("Enter Living Room Surface Area",1000, 1500, 1700,1800)
+GrLivArea = st.slider("Enter Living Room Surface Area",1000, 1500,2000)
 # print the user's name
 #st.write("GrLivArea :", GrLivArea)
 
